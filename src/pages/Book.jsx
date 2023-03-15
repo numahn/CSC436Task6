@@ -29,8 +29,8 @@ const Book = () => {
     return (<Container>
         {!error && loading ? <div className="flex justify-center"><Oval height={600}/></div>:
         <div className="container">
-            <div className="text-sm breadcrumb"><RouterLink to="/books" className="hover:text-green-700"> Back to List</RouterLink></div>
-            <div className="flex flex-col items-center book-card">
+            <div className="text-sm breadcrumb"><RouterLink to="/books" className="hover:text-green-700 hover:text-base"> Back to List</RouterLink></div>
+            <div className="flex flex-col items-center bg-stone-300 rounded-lg book-card">
                 <h1 className="text-3xl book-title">{res.title}</h1>
                 <p className="book-author text-x1">{res.author}</p>
                 <img src={res.imageURL} alt="bookimage"></img>
